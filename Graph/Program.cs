@@ -97,7 +97,7 @@ namespace Graph
                         v.RedCount = red_count;
                         Q.Enqueue(v);
                     }
-                    else if (v.Distance == distance && v.RedCount < red_count)
+                    else if (v.Distance == distance && v.RedCount > red_count)
                     {
                         v.Pie = u;
                         v.RedCount = red_count;
